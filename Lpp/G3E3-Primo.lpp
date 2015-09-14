@@ -1,0 +1,38 @@
+entero a,b,c,e
+booleano t
+inicio
+a<-0
+e<-30
+c<-0
+
+mientras e>0 haga
+t<-verdadero
+	si (a=0) o (a=1) o (a=2) o (a=3) o (a=5) o (a=7) entonces
+		t<-verdadero
+	sino
+		b<-2
+		mientras (b<a) haga
+			si (a mod b) = 0 entonces
+				t<-falso
+				b<-a
+				//Escriba "(",b,")"
+			sino
+				t<-verdadero
+			fin si
+			b<-b+1
+			//Escriba "<",b,">"
+		fin mientras
+	fin si
+
+	si (t=verdadero) entonces
+	//	Escriba "El numero: ",a, " es primo"
+		Escriba a,", "
+		e<-e-1
+//	sino 
+
+		//e<-e-1
+	// Escriba "El numero: ",a, " es primo"
+	fin si
+	a<-a+1
+fin mientras
+fin

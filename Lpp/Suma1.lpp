@@ -1,0 +1,29 @@
+Entero a,b
+Inicio 
+Escriba "**********************"
+Llamar nueva_linea
+Escriba "******----------******"
+Escriba ""
+Llamar nueva_linea
+Escriba "**********************"
+Llamar nueva_linea
+Escriba "."
+Escriba "ingrese un numero: "
+Lea a
+Escriba "ingrese un numero: "
+Lea b
+Escriba "el resulstado es de la suma es: ",a+b
+Llamar nueva_linea
+Escriba "el resulstado es de la resta es: ",a-b
+Llamar nueva_linea
+si (b =0) entonces
+Escriba " No se puede dividir por cero"
+sino
+Escriba " Si se puede	"
+Escriba "el resulstado es de la division es: ",a/b
+fin si
+Llamar nueva_linea
+Escriba "el resulstado es de la multiplicacion es: ",a*b
+Llamar nueva_linea
+
+Fin

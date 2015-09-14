@@ -1,0 +1,54 @@
+Entero a,b,c,d,e,f,g
+/*a, numero a ingresar, b generador de numeros, 
+c suma pares, d, iniciador e, suma impares
+f resta pares g, resta impares
+*/
+inicio
+b<-1
+c<-0
+a<-9
+mientras a<10 haga
+	Escriba "Ingrese un numero mayor que 10: "
+	lea a
+fin mientras
+d<-a
+llamar nueva_linea
+Escriba "Los numero Pares son: "
+mientras a>0 haga
+	si (b mod 2) = 0 entonces
+		escriba b,", "
+		c<-c+b
+		f<-f-b
+	fin si	
+	a<-a-1
+	b<-b+1
+fin mientras
+a<-d
+b<-1
+llamar nueva_linea
+Escriba "Los numero Impares son: "
+mientras a>0 haga
+	si (b mod 2) = 0 entonces
+	sino
+		escriba b,", "
+		e<-e+b
+		g<-g-b
+	fin si	
+	a<-a-1
+	b<-b+1
+fin mientras
+llamar nueva_linea
+Escriba "La suma de los pares es: ",c 
+llamar nueva_linea
+Escriba "La suma de los impares es: ",e
+llamar nueva_linea
+Escriba "La resta de los pares es: ",f
+llamar nueva_linea
+Escriba "La resta de los impares es: ",g
+llamar nueva_linea
+Escriba "El promedio de los pares es: ",c/d 
+llamar nueva_linea
+Escriba "El promedio de los impares es: ",e/d 
+llamar nueva_linea
+Escriba "La diferencia de la suma de lo pares y de los impares es: ",c-e 
+fin

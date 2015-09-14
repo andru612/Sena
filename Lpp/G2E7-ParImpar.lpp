@@ -1,0 +1,12 @@
+entero a
+inicio
+escriba "Funcion par o impar"
+llamar nueva_linea
+escriba "ingrese numero: "
+lea a
+si (a mod 2 = 0) entonces
+escriba "el numero ",a," es par"
+sino
+escriba "el numero ",a," es impar"
+fin si
+fin

@@ -1,0 +1,12 @@
+Entero a,b
+inicio
+	b<-1
+	Escriba "	Ingrese un numero: "
+	lea a
+	mientras b<11 haga
+		Escriba "	"
+		Escriba b," x ",a," = ",b*a
+		llamar nueva_linea
+		b<-b+1
+	fin mientras
+fin

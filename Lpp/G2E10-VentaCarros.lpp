@@ -1,0 +1,37 @@
+Entero modelo,desc,precio
+Cadena [12]color
+Cadena [20]marca
+Inicio
+llamar nueva_linea
+llamar nueva_linea
+Escriba "Guia No2 - Ejercicio 10"
+llamar nueva_linea
+Escriba "Ingrese la marca: "
+Lea marca
+Escriba "Ingrese el modelo: "
+ Lea modelo
+Escriba "Ingrese el color: "
+Lea color
+Escriba "Ingrese el precio: "
+Lea precio
+si (color = "verde") entonces
+	desc <- precio*0.15
+	sino 
+		si (modelo < 1995) entonces
+			desc <- precio*0.2
+			sino
+				si ((color="rojo") y (modelo > 1995)) entonces
+					desc <- precio*0.1
+					sino
+					desc <- 0
+				fin si
+		fin si
+fin si
+Escriba " El precio es: ", precio
+llamar nueva_linea
+Escriba " El descuento es: ", desc
+llamar nueva_linea
+Escriba " El marca es: ", marca
+llamar nueva_linea
+Escriba " El Total es: ", (precio-desc)
+fin

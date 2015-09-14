@@ -1,0 +1,73 @@
+arreglo [50] de entero a
+arreglo [50] de entero p
+entero b,c,d,m,e,f,x
+booleano t
+inicio
+c<-0
+d<-0
+e<-0
+f<-0
+b<-1
+llamar inicializar_aleatorio
+mientras b<51 haga
+	mientras a[b]<4 haga
+		//Escriba "Ingrese valor ",b,": "
+		//lea a[b]
+		a[b]<-aleatorio()*1000
+		//llamar nueva_linea
+	fin mientras
+		b<-b+1
+fin mientras
+b<-1
+mientras b<51 haga
+	si (a[b] mod 2)=0 entonces
+		c<-c+1
+	sino
+		d<-d+1
+	fin si
+	t<-verdadero
+
+	si (a[b]=0) o (a[b]=1) o (a[b]=2) o (a[b]=3) o (a[b]=5) o (a[b]=7) entonces
+		t<-verdadero
+	sino
+		m<-2
+		mientras (m<a[b]) haga
+			si (a[b] mod m) = 0 entonces
+				t<-falso
+				m<-a[b]
+				f<-f+1
+			sino
+				t<-verdadero
+			fin si
+			m<-m+1
+		fin mientras
+	fin si
+
+	si (t=verdadero) entonces
+	p[b]<-a[b]
+	e<-e+1
+	fin si
+
+
+
+	b<-b+1
+fin mientras
+b<-1
+Escriba "El total de numeros pares fue: ",c
+llamar nueva_linea
+Escriba "El total de numeros impares fue: ",d
+llamar nueva_linea
+Escriba "El total de numeros primos fue: ",e
+llamar nueva_linea
+Escriba "El total de numeros NO primos fue: ",f
+llamar nueva_linea
+Escriba "Los numeros primos fueron: "
+llamar nueva_linea
+mientras b<51 haga
+	si p[b]=0 entonces
+	sino
+		Escriba p[b],", "
+	fin si
+	b<-b+1
+fin mientras
+fin

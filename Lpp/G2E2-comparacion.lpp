@@ -1,0 +1,16 @@
+Entero a,b
+Inicio
+Escriba "ingrese 1r valor: "
+Lea a
+Escriba "ingrese 2o valor: "
+Lea b
+si ( a > b) entonces
+Escriba a ," es mayor que ", b
+fin si
+si (a < b) entonces
+Escriba a, " es menor que ", b
+fin si
+si (a = b) entonces
+Escriba a ," es igual ", b
+fin si
+fin

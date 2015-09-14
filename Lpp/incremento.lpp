@@ -1,0 +1,15 @@
+Entero i
+Inicio
+i<-0
+llamar nueva_linea
+llamar nueva_linea
+mientras i<=10 haga
+Escriba i,", "
+i<-i+2
+fin mientras
+llamar nueva_linea
+llamar nueva_linea
+para i<-0 hasta 10 haga
+Escriba i,", "
+fin para
+fin

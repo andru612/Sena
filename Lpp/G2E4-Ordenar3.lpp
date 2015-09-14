@@ -1,0 +1,36 @@
+entero a,b,c
+inicio
+Escriba "		Guia 2 - Ejercicio 4"
+llamar nueva_linea
+Escriba "	Ingrese 3 numeros diferentes para organizar"
+llamar nueva_linea
+Escriba "	Ingrese 1r valor: "
+Lea a
+Escriba "	Ingrese 2o valor: "
+Lea b
+Escriba "	Ingrese 3r valor: "
+lea c
+si ((a<=b) y (a<=c)) entonces
+	escriba a,", "
+	si (b<=c) entonces
+		escriba b,", ",c
+	sino 
+		escriba c,", ",b
+	fin si
+sino si ((b<=a) y (b<=c)) entonces
+		escriba b,", "
+			si ( a<=c) entonces
+				escriba a," ",c
+			sino 
+			escriba c," ",a
+			fin si
+	sino 
+		escriba c,", "
+			si (a<=b) entonces
+				escriba a,", ",b
+			sino
+				escriba b,", ",a
+			fin si
+	fin si
+fin si
+fin

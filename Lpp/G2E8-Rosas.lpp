@@ -1,0 +1,37 @@
+entero b,v
+real d
+cadena [20]a
+inicio
+Escriba "Programa rosas"
+llamar nueva_linea
+Escriba "Ingresse color de rosas: "
+lea a
+Escriba "Ingrese cantidad de docenas a vender: "
+lea b
+si a = "ROJO" entonces
+v<-4000
+d<-0.1
+sino si a = "BLANCO"  entonces
+v<-5000
+d<-0.08
+sino si a = "NEGRO"  entonces
+v<-18000
+d<-0
+sino 
+v<-6000
+d<-0.02
+fin si
+fin si
+fin si
+Escriba "El color de rosas es: ", a
+llamar nueva_linea
+Escriba "La cantidad de docenas es: ", b
+llamar nueva_linea
+Escriba "El valor por docena es: ", v
+llamar nueva_linea
+Escriba "El total sin descuento es: ", v*b
+llamar nueva_linea
+Escriba "El descuento es: ",(b*v*d)
+llamar nueva_linea
+Escriba "El Total es: ", (b*v)-(b*v*d)
+fin

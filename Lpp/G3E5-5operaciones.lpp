@@ -1,0 +1,46 @@
+entero a,b,c
+booleano f
+inicio
+f<-verdadero
+a<-6
+mientras f haga
+	mientras a>5 haga
+	llamar nueva_linea
+	Escriba "Menu opciones para realizar "
+	llamar nueva_linea
+	Escriba "0. Salir "
+	llamar nueva_linea
+	Escriba "1. Sumar J+K "
+	llamar nueva_linea
+	Escriba "2. Hallar el modulo J%K "
+	llamar nueva_linea
+	Escriba "3. Division de J/K "
+	llamar nueva_linea
+	Escriba "4. Suma de J+K+1 "
+	llamar nueva_linea
+	Escriba "5. Multiplicacion de J*K*1 "
+	llamar nueva_linea
+	Escriba "Ingrese una opcion para realizar: "
+	Lea a
+	fin mientras
+	si a>0 entonces
+		llamar nueva_linea
+		Escriba "Ingrese dos valores "
+		llamar nueva_linea
+		Escriba "Ingrese el primer valor: "
+		lea b
+		llamar nueva_linea
+		Escriba "Ingrese el segundo valor: "
+		lea c
+	fin si
+	caso a
+		0: f<-falso
+		1: Escriba "La Suma es: ", b+c
+		2: Escriba "El Modulo es: ", b mod c
+		3: Escriba "La Division es: ", b/c
+		4: Escriba "La Suma de J+K+1 es: ", b+c+1
+		5: Escriba "La Multiplicacion es: ", b*c*1
+	fin caso
+	a<-6
+fin mientras
+fin

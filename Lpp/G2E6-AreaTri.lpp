@@ -1,0 +1,10 @@
+real a,b
+inicio
+escriba "Calcular area triangulo"
+llamar nueva_linea
+escriba "Ingrese altura"
+lea a
+escriba "Ingrese Base"
+lea b
+Escriba "El area del triangulo es: ", (b*a)/2
+fin

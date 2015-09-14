@@ -1,0 +1,42 @@
+entero a,b,c,m
+booleano t
+inicio
+c<-3
+t<-verdadero
+mientras c<4 haga
+	Escriba "Ingrese dos valores el primero mayor que el segundo con una diferencia de 4"
+	llamar nueva_linea
+	Escriba "ingrese valor 1: "
+	lea a
+	llamar nueva_linea
+	Escriba "ingrese valor 2: "
+	lea b
+	c<-a-b
+fin mientras
+c<-a-b
+mientras c>0 haga
+	t<-verdadero
+	si (b=0) o (b=1) o (b=2) o (b=3) o (b=5) o (b=7) entonces
+		t<-verdadero
+	sino
+		m<-2
+		mientras (m<b) haga
+			si (b mod m) = 0 entonces
+				t<-falso
+				m<-b
+				//Escriba "(",b,")"
+			sino
+				t<-verdadero
+			fin si
+				m<-m+1
+				//Escriba "<",b,">"
+		fin mientras
+	fin si
+
+	si (t=verdadero) entonces
+		Escriba b,", "
+	fin si
+	b<-b+1
+	c<-c-1
+fin mientras
+fin

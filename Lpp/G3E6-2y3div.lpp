@@ -1,0 +1,28 @@
+Entero a
+caracter c
+booleano b
+inicio
+b<-verdadero
+a<-3
+Escriba "	Ejercicio 6 - Guia 3"
+llamar nueva_linea
+mientras b haga
+	mientras a<4 haga
+		llamar nueva_linea
+		Escriba "Ingrese un numero mayor que 3: "
+		lea a
+	fin mientras
+	si (((a mod 2) = 0 )y ((a mod 3) = 0)) entonces
+		Escriba "El numero ",a," Es divisible por 2 y por 3 al mismo tiempo"
+	sino 
+		Escriba "El numero ",a," NO es divisible por 2 y por 3 al mismo tiempo"
+	fin si
+	llamar nueva_linea
+	Escriba "Desea continuar S/n: "
+	lea c
+	caso c
+		'N','n': b<-falso
+	fin caso
+	a<-3
+fin mientras
+fin

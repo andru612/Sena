@@ -1,0 +1,16 @@
+Entero a
+Inicio
+llamar nueva_linea
+llamar nueva_linea
+Escriba "ingrese valor numerico : "
+Lea a
+si (a<100) entonces
+	Escriba a, " es menor que 100"
+	sino si (a>100) entonces
+		Escriba a, " es mayor que 100"
+		sino
+			Escriba a, " es igual que 100"
+	fin si
+fin si
+Fin
+

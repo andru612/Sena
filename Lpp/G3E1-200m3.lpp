@@ -1,0 +1,11 @@
+entero a
+inicio
+Escriba "		Restar de a 3 a 200"
+a<-200
+llamar nueva_linea
+escriba a
+mientras a>0 haga
+	escriba ", ",a
+	a <- a-3
+fin mientras
+fin

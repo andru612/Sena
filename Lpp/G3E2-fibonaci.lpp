@@ -1,0 +1,30 @@
+real a,b,c,d,e,f
+inicio
+a<-9
+b<-0
+c<-1
+d<-0
+e<-0
+Escriba "Ejercio 2 - Guia 3"
+llamar nueva_linea
+mientras a<10 haga
+	Escriba "Ingrese un valor mayor que 10: "
+	lea a
+fin mientras
+mientras a>0 haga
+	d<-d+1
+	a<-a-1
+	//Escriba ", ",b
+	
+	Escriba b,", "
+	f<-c+b
+	c<-b
+	b<-f
+	e<-e+b
+	//Escriba ", ",b
+fin mientras
+llamar nueva_linea
+Escriba "La Suma de los numero es: ", e
+llamar nueva_linea
+Escriba "La cantidad de numeros es:  ", d
+fin

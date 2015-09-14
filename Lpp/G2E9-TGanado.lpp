@@ -1,0 +1,26 @@
+entero a
+real b,d
+inicio
+a<-200
+Escriba "Programa calcula ganacia"
+llamar nueva_linea
+mientras (a > 101) haga
+Escriba " Ingrese el numero de productos de 0 a 100: "
+lea a
+fin mientras
+Escriba " Ingrese la total de ventas: "
+lea b
+	si a <21 entonces
+		d<-0.05	
+		sino si ( (a>20) y (a<51) ) entonces
+			 d<-0.1
+			 sino si ((a>50) y (a <81)) entonces
+					d<-0.15
+				  sino si ((a>80) y (a<101)) entonces
+						d<-0.2
+					    fin si
+				  fin si
+		     fin si
+	fin si
+escriba "El total ganado es: ", b*d
+fin

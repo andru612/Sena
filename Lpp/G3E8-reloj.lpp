@@ -1,0 +1,39 @@
+entero a,b,c
+inicio
+a<-0
+b<-0
+c<-0
+mientras a<24 haga
+	mientras b<60 haga
+		mientras c<60 haga
+			si a<10 entonces
+				si b<10 entonces
+					si c<10 entonces
+						escriba "0",a,":","0",b,":","0",c,"  "
+					sino 
+						escriba "0",a,":","0",b,":",c,"  "
+					fin si
+				sino
+					escriba "0",a,":",b,":",c,"  "
+				fin si
+			sino
+				si b<10 entonces
+					si c<10 entonces
+						escriba a,":","0",b,":","0",c,"  "
+					sino 
+						escriba a,":","0",b,":",c,"  "
+					fin si
+				sino
+					escriba a,":",b,":",c,"  "
+				fin si
+			fin si
+                        c<-c+1
+                        llamar nueva_linea
+		fin mientras
+                c<-0
+		b<-b+1
+	fin mientras
+        b<-0
+	a<-a+1
+fin mientras
+fin
